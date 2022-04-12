@@ -6,7 +6,24 @@ default value to be "text" and return the input element inside label. (create it
 */
 
 // Your code goes here
+function createInputElm(label,type="text"){
+  //let inputType = type;
+  label=document.createElement('label');
+  type=document.createElement('input[type=text]');
+  
+  if(typeof type== "string"){
+    return type="text";
+  }
+  else if(typeof type=="number"){
+    return type="number";
+  }
+  else{
+    return type="text";
+  }
 
+}
+let result=createInputElm('Your name');
+console.log(result);
 // TEST
 createInputElm('Your name'); //<label>Your name: <input type="text"></label>
 createInputElm('Your age', 'number'); //<label>Your age: <input type="number"></label>
@@ -14,6 +31,24 @@ createInputElm('Your age', 'number'); //<label>Your age: <input type="number"></
 // 2. Do the same thing as above using string literal like `<h1>Hello</h1>`
 
 // Your code goes here
+function createInputElm (label,type="text"){
+  //let inputType = type;
+  h1=document.createElement('h1');
+  type=document.createElement('input[type=text]');
+  
+  if(typeof type== "string"){
+    return type="text";
+  }
+  else if(typeof type=="number"){
+    return type="number";
+  }
+  else{
+    return type="text";
+  }
+
+}
+let resultHello=createInputElm('Hello');
+console.log(result);
 
 // TEST
 createInputElm('Your name'); //<label>Your name: <input type="text"></label>
@@ -22,6 +57,14 @@ createInputElm('Your age', 'number'); //<label>Your age: <input type="number"></
 // 3. Create a function named `createList` that accept and array of data like ['Mango', 'Apple', 'Banana'] and returns
 // the html for the link like <ul> <li>Mango</li>  <li>Apple</li>  <li>Banana</li> </ul>
 // Your code goes here
+function createList(array){
+  array=[];
+
+ let li=document.createElement('li');
+ li.innerText="";
+ return newarray.append('li');
+
+}
 
 // TEST
 createList(['ALABAMA', 'ALASKA', 'HAWAII', 'KENTUCKY']);
@@ -40,6 +83,7 @@ createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
 */
 
 // Your code goes here
+
 
 // TEST
 createTodoList([
