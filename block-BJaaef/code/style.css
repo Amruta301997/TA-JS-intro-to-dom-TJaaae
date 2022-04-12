@@ -10,12 +10,38 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 1rem;
 }
-.box {
+/*.box {
   border: 2px solid #d6bcfa;
-  height: 500px;
+  height: 100px;
   border-radius: 10px;
-}
+}*/
 h1,
 h2 {
   text-align: center;
+}
+
+
+
+ul{
+  background-color: aliceblue;
+  
+}
+
+button{
+  text-align: center;
+  padding: 10px;
+  margin: 30px 10px;
+  border-radius: 0.5rem;
+  background-color: rgb(57, 57, 216);
+}
+img{
+  height: 200px;
+  width: 130px;
+}
+.header{
+  background-color: rgb(3, 103, 128);
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 30px;
+  font-weight: 700;
 }
