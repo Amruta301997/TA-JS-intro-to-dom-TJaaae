@@ -1,0 +1,41 @@
+
+* {
+    /* padding: 0; */
+    /* margin: 0; */
+    box-sizing: border-box;
+  }
+  body {
+    background: #f8d8d8;
+    color: rgb(14, 14, 14);
+    font-family: sans-serif;
+    line-height: 1.15;
+  }
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1em;
+    margin: 0px 10px;
+    
+ }
+ ul{
+    background-color: aliceblue;
+ }
+
+
+button{
+    text-align: center;
+    padding: 10px;
+    margin: 30px 10px;
+    border-radius: 0.5rem;
+    background-color: rgb(57, 57, 216);
+}
+img{
+    height: 200px;
+    width: 130px;
+}
+.header{
+    background-color: rgb(3, 103, 128);
+    text-align: center;
+    padding: 10px 0px;
+}
